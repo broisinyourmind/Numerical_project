@@ -1,8 +1,7 @@
 clc;clear;close all;
 
-[img_p,cmap] = imread('population1.png');
+[img_p,cmap] = imread('population.png');
 imshow(img_p,cmap); 
-
 Mov(1) = getframe;
 size(img_p);
 
@@ -19,7 +18,7 @@ y = exp(x/70);
 
 for ii = 1:100
     hold on
-    h = plot(x(1:ii),-(y(1:ii)-400),'-r','LineWidth',5);
+    h = plot(x(1:ii),-(y(1:ii)-560),'-r','LineWidth',5);
     legend('population','Location','NorthWest');
     
     switch ii
